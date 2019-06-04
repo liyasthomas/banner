@@ -7,7 +7,7 @@ const download = () => {
 	html2canvas(capture, {
 		x: capture.offsetLeft,
 		y: capture.offsetTop,
-		scale: 2
+		scale: 1
 	}).then(canvas => {
 		saveAs(canvas.toDataURL(), 'banner.png')
 	})
@@ -26,14 +26,10 @@ const saveAs = (uri, filename) => {
 }
 const border = ({
 	value
-}) => {
-	capture.style.borderWidth = value + `px`
-}
+}) => capture.style.borderWidth = value + `px`
 const fontsize = ({
 	value
-}) => {
-	heading.style.fontSize = value + `px`
-}
+}) => heading.style.fontSize = value + `px`
 let picker1 = new Picker({
 	parent: bgc,
 	color: getComputedStyle(document.documentElement).getPropertyValue('--bg-color'),
@@ -73,3 +69,14 @@ const random = () => {
 	root.style.setProperty('--borderbg-color', generateRandomHexColor())
 }
 const generateRandomHexColor = () => `#${Math.floor(Math.random() * 16777215).toString(16)}`
+const readURL = () => {
+	const file = document.getElementById("getval").files[0];
+	const reader = new FileReader();
+	reader.onloadend = () => {
+		document.getElementById('capture').style.backgroundImage = `url(${reader.result})`;
+	}
+	if (file) {
+		reader.readAsDataURL(file);
+	} else {}
+}
+document.getElementById('getval').addEventListener('change', readURL, true);

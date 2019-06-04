@@ -81,7 +81,10 @@ footer {
 	background-color: var(--bg-color);
 	color: var(--font-color);
 	border: 0 solid var(--borderbg-color);
-	height: 30vw;
+	height: 25vw;
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-size: cover;
 }
 
 [contenteditable=true]:empty:before {
@@ -95,13 +98,31 @@ input[type="number"] {
 	color: #ffffff;
 	padding: 2px 2px 2px 8px;
 	width: 56px;
-	border-radius: 4px;
+}
+
+input[type=file] {
+	display: inline-flex;
+	width: 98px;
+	height: 40px;
+	cursor: pointer;
+}
+
+input[type=file]:before {
+	padding: 2px 16px;
+	content: 'Upload';
+}
+
+input[type=file]::-webkit-file-upload-button {
+	visibility: hidden;
 }
 
 input {
 	font-size: 18px;
 	font-family: 'Roboto Mono', "SF Mono", "Lucida Console", Monaco, monospace;
 	line-height: 2;
+	background: #000;
+	color: #fff;
+	border-radius: 4px;
 }
 
 .heading {
@@ -156,7 +177,6 @@ button {
 	flex-grow: 1;
 	justify-content: space-between;
 }
-
 
 @media (max-width: 640px) {
 	.content {
