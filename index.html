@@ -86,15 +86,15 @@
 				<div class="actions">
 					<div class="flex">
 						<h3>Background color</h3>
-						<div id="bgc" class="color"></div>
+						<div id="bg" class="color"></div>
 					</div>
 					<div class="flex">
 						<h3>Foreground color</h3>
-						<div id="bfc" class="color"></div>
+						<div id="fg" class="color"></div>
 					</div>
 					<div class="flex">
 						<h3>Border color</h3>
-						<div id="borderbg" class="color"></div>
+						<div id="bbg" class="color"></div>
 					</div>
 					<div class="flex">
 						<h3>Border width</h3>
@@ -102,15 +102,15 @@
 					</div>
 					<div class="flex">
 						<h3>Font size</h3>
-						<input id="fontsize" type="number" oninput="fontsize(this)" value="56" min="14">
+						<input id="fontsize" type="number" oninput="fontsize(this)" value="56" min="14" max="200">
 					</div>
 					<div class="flex">
 						<h3>Banner height ratio</h3>
-						<input id="height" type="number" oninput="cheight(this)" value="25" min="20" step="5">
+						<input id="height" type="number" oninput="cheight(this)" value="30" min="20" max="100" step="5">
 					</div>
 					<div class="flex">
 						<h3>Background image</h3>
-						<input type='file' id='getval' name="background-image">
+						<input type='file' id='getbg' name="background-image">
 					</div>
 				</div>
 			</div>

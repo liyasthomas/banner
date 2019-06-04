@@ -1,7 +1,7 @@
 :root {
-	--font-color: #fff;
 	--bg-color: #000;
-	--borderbg-color: #f00;
+	--fg-color: #fff;
+	--bbg-color: #f00;
 }
 
 * {
@@ -12,7 +12,7 @@
 
 ::selection {
 	color: var(--bg-color);
-	background-color: var(--font-color);
+	background-color: var(--fg-color);
 }
 
 @keyframes fadein {
@@ -26,7 +26,7 @@
 }
 
 a {
-	color: var(--afont-color);
+	color: inherit;
 	text-decoration: none;
 }
 
@@ -81,9 +81,9 @@ footer {
 	flex-shrink: 0;
 	margin: 16px;
 	background-color: var(--bg-color);
-	color: var(--font-color);
-	border: 0 solid var(--borderbg-color);
-	height: 25vw;
+	color: var(--fg-color);
+	border: 0px solid var(--bbg-color);
+	height: 30vw;
 	background-position: center center;
 	background-repeat: no-repeat;
 	background-size: cover;
@@ -150,16 +150,16 @@ input {
 	cursor: pointer;
 }
 
-#bgc {
+#bg {
 	background-color: var(--bg-color);
 }
 
-#bfc {
-	background-color: var(--font-color);
+#fg {
+	background-color: var(--fg-color);
 }
 
-#borderbg {
-	background-color: var(--borderbg-color);
+#bbg {
+	background-color: var(--bbg-color);
 }
 
 button {

@@ -1,6 +1,7 @@
 const capture = document.getElementById('capture')
-const bgc = document.getElementById('bgc')
-const borderbg = document.getElementById('borderbg')
+const bg = document.getElementById('bg')
+const fg = document.getElementById('fg')
+const bbg = document.getElementById('bbg')
 const heading = document.getElementById('heading')
 const root = document.querySelector(':root')
 const download = () => {
@@ -34,7 +35,7 @@ const cheight = ({
 	value
 }) => capture.style.height = value + `vw`
 let picker1 = new Picker({
-	parent: bgc,
+	parent: bg,
 	color: getComputedStyle(document.documentElement).getPropertyValue('--bg-color'),
 	popup: 'left',
 	alpha: false,
@@ -45,41 +46,44 @@ let picker1 = new Picker({
 	}
 })
 let picker2 = new Picker({
-	parent: bfc,
-	color: getComputedStyle(document.documentElement).getPropertyValue('--font-color'),
+	parent: fg,
+	color: getComputedStyle(document.documentElement).getPropertyValue('--fg-color'),
 	popup: 'left',
 	alpha: false,
 	onChange({
 		rgbaString
 	}) {
-		root.style.setProperty('--font-color', rgbaString)
+		root.style.setProperty('--fg-color', rgbaString)
 	}
 })
 let picker3 = new Picker({
-	parent: borderbg,
-	color: getComputedStyle(document.documentElement).getPropertyValue('--borderbg-color'),
+	parent: bbg,
+	color: getComputedStyle(document.documentElement).getPropertyValue('--bbg-color'),
 	popup: 'left',
 	alpha: false,
 	onChange({
 		rgbaString
 	}) {
-		root.style.setProperty('--borderbg-color', rgbaString)
+		root.style.setProperty('--bbg-color', rgbaString)
 	}
 })
 const random = () => {
 	root.style.setProperty('--bg-color', generateRandomHexColor())
-	root.style.setProperty('--font-color', generateRandomHexColor())
-	root.style.setProperty('--borderbg-color', generateRandomHexColor())
+	root.style.setProperty('--fg-color', generateRandomHexColor())
+	root.style.setProperty('--bbg-color', generateRandomHexColor())
+	picker1.setColor(getComputedStyle(document.documentElement).getPropertyValue('--bg-color'))
+	picker2.setColor(getComputedStyle(document.documentElement).getPropertyValue('--fg-color'))
+	picker3.setColor(getComputedStyle(document.documentElement).getPropertyValue('--bbg-color'))
 }
-const generateRandomHexColor = () => `#${Math.floor(Math.random() * 16777215).toString(16)}`
+const generateRandomHexColor = () => `#${(0x1000000 + Math.random() * 0xFFFFFF).toString(16).substr(1, 6)}`
 const readURL = () => {
-	const file = document.getElementById("getval").files[0];
-	const reader = new FileReader();
+	const file = document.getElementById('getbg').files[0]
+	const reader = new FileReader()
 	reader.onloadend = () => {
-		document.getElementById('capture').style.backgroundImage = `url(${reader.result})`;
+		document.getElementById('capture').style.backgroundImage = `url(${reader.result})`
 	}
 	if (file) {
-		reader.readAsDataURL(file);
+		reader.readAsDataURL(file)
 	} else {}
 }
-document.getElementById('getval').addEventListener('change', readURL, true);
+document.getElementById('getbg').addEventListener('change', readURL, true)
