@@ -129,7 +129,6 @@ input {
 	line-height: 2;
 	background: #111;
 	color: #fff;
-	border-radius: 4px;
 }
 
 .heading {
@@ -174,7 +173,6 @@ button {
 	margin: 4px 0;
 	background-color: #111;
 	color: #fff;
-	border-radius: 4px;
 	cursor: pointer;
 	font-size: 18px;
 }
