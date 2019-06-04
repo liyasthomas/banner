@@ -30,6 +30,9 @@ const border = ({
 const fontsize = ({
 	value
 }) => heading.style.fontSize = value + `px`
+const cheight = ({
+	value
+}) => capture.style.height = value + `vw`
 let picker1 = new Picker({
 	parent: bgc,
 	color: getComputedStyle(document.documentElement).getPropertyValue('--bg-color'),

@@ -71,6 +71,8 @@ footer {
 }
 
 .capture {
+	position: sticky;
+	top: 16px;
 	display: flex;
 	align-items: center;
 	justify-content: center;
@@ -145,6 +147,7 @@ input {
 	border: 3px solid rgba(0, 0, 0, .2);
 	height: 32px;
 	width: 32px;
+	cursor: pointer;
 }
 
 #bgc {
