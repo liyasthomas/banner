@@ -1,5 +1,5 @@
 :root {
-	--bg-color: #000;
+	--bg-color: #111;
 	--fg-color: #fff;
 	--bbg-color: #f00;
 }
@@ -36,26 +36,31 @@ body {
 	-webkit-touch-callout: none;
 	-webkit-user-select: none;
 	user-select: none;
-	color: #000;
+	background-color: #eee;
+	color: #111;
 	width: 100%;
 	height: 100vh;
 	font-size: 16px;
-	font-family: 'Roboto Mono', "SF Mono", "Lucida Console", Monaco, monospace;
+	font-weight: 500;
+	font-family: 'Product Sans', 'Roboto', 'Noto', sans-serif;
 	line-height: 1.5;
 	animation: fadein .2s;
 }
 
-h1 {
+h1,
+h2,
+h3 {
 	margin: 0;
+	font-weight: 700;
 }
 
 header,
 footer {
 	display: flex;
 	align-items: center;
-	padding: 8px 16px;
-	font-weight: 600;
+	justify-content: space-between;
 	width: 100%;
+	padding: 16px;
 }
 
 .content {
@@ -96,7 +101,7 @@ footer {
 }
 
 input[type="number"] {
-	background: #000000;
+	background: #111;
 	color: #ffffff;
 	padding: 2px 2px 2px 8px;
 	width: 56px;
@@ -104,7 +109,7 @@ input[type="number"] {
 
 input[type=file] {
 	display: inline-flex;
-	width: 98px;
+	width: 88px;
 	height: 40px;
 	cursor: pointer;
 }
@@ -120,25 +125,21 @@ input[type=file]::-webkit-file-upload-button {
 
 input {
 	font-size: 18px;
-	font-family: 'Roboto Mono', "SF Mono", "Lucida Console", Monaco, monospace;
+	font-family: 'Product Sans', 'Roboto', 'Noto', sans-serif;
 	line-height: 2;
-	background: #000;
+	background: #111;
 	color: #fff;
 	border-radius: 4px;
 }
 
 .heading {
-	font-size: 56px;
-	line-height: 1.25;
+	font-size: 60px;
+	line-height: 1;
+	font-weight: 700;
 }
 
 .controls {
-	padding: 16px;
-}
-
-.title {
-	font-size: 24px;
-	font-weight: 800;
+	margin: 16px;
 }
 
 .color {
@@ -163,11 +164,15 @@ input {
 }
 
 button {
-	font-weight: 600;
-	font-family: 'Roboto Mono', "SF Mono", "Lucida Console", Monaco, monospace;
-	padding: 8px 16px;
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	flex-grow: 1;
+	width: 100%;
+	font-family: 'Product Sans', 'Roboto', 'Noto', sans-serif;
+	padding: 16px 32px;
 	margin: 4px 0;
-	background-color: #000;
+	background-color: #111;
 	color: #fff;
 	border-radius: 4px;
 	cursor: pointer;
@@ -177,8 +182,9 @@ button {
 .flex {
 	display: flex;
 	align-items: center;
-	flex-grow: 1;
 	justify-content: space-between;
+	flex-grow: 1;
+	padding: 16px 0;
 }
 
 @media (max-width: 640px) {
