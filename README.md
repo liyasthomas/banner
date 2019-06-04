@@ -55,8 +55,6 @@ You're done!
 
 ## Built with
 
-* **[MarkedJS](https://marked.js.org)** - For banner parser
-* **[highlightjs](https://highlightjs.org)** - For code highlighting
 * **[Chromium](https://github.com/chromium/chromium)** - Thanks for being so fast!
 * HTML - For the web framework
 * CSS - For styling components
@@ -100,8 +98,7 @@ See the [CHANGELOG](CHANGELOG.md) file for details.
 * [Liyas Thomas](https://github.com/liyasthomas)
 
 ### Thanks
-* [MarkedJS](https://marked.js.org)
-* [highlightjs](https://highlightjs.org)
+* [Dribbble](https://dribbble.com)
 
 See the list of [contributors](https://github.com/liyasthomas/banner/graphs/contributors) who participated in this project.
 
@@ -117,5 +114,4 @@ This project is licensed under the [MIT License](https://opensource.org/licenses
 
 * Hat tip to anyone who's code was used
 * Inspirations:
-	* [StackEdit](https://stackedit.io)
 	* [Dribbble](https://dribbble.com)
