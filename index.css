@@ -79,11 +79,11 @@ footer {
 	position: sticky;
 	top: 16px;
 	display: flex;
-	align-items: center;
 	justify-content: center;
 	flex-direction: column;
 	flex-grow: 1;
 	flex-shrink: 0;
+	padding: 32px;
 	margin: 16px;
 	background-color: var(--bg-color);
 	color: var(--fg-color);
@@ -92,6 +92,7 @@ footer {
 	background-position: center center;
 	background-repeat: no-repeat;
 	background-size: cover;
+	text-align: center;
 }
 
 [contenteditable=true]:empty:before {
@@ -183,6 +184,27 @@ button {
 	justify-content: space-between;
 	flex-grow: 1;
 	padding: 16px 0;
+}
+
+.tabs {
+	display: flex;
+	flex-direction: column;
+}
+
+.rows {
+	display: flex;
+}
+
+.tab {
+	display: inline-flex;
+	padding: 8px 16px;
+	cursor: pointer;
+	background-color: #ddd;
+}
+
+.current {
+	background-color: #111;
+	color: #fff;
 }
 
 @media (max-width: 640px) {

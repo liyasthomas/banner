@@ -111,6 +111,26 @@
 					<h3>Background image</h3>
 					<input type='file' id='getbg' name="background-image">
 				</div>
+				<div class="flex">
+					<h3>Text alignment</h3>
+					<div class="tabs">
+						<div class="rows">
+							<div class="tab" onclick="textalign(this, 'left', 'flex-start')">┏</div>
+							<div class="tab" onclick="textalign(this, 'center', 'flex-start')">┳</div>
+							<div class="tab" onclick="textalign(this, 'right', 'flex-start')">┓</div>
+						</div>
+						<div class="rows">
+							<div class="tab" onclick="textalign(this, 'left', 'center')">┣</div>
+							<div class="tab current" onclick="textalign(this, 'center', 'center')">╋</div>
+							<div class="tab" onclick="textalign(this, 'right', 'center')">┫</div>
+						</div>
+						<div class="rows">
+							<div class="tab" onclick="textalign(this, 'left', 'flex-end')">┗</div>
+							<div class="tab" onclick="textalign(this, 'center', 'flex-end')">┻</div>
+							<div class="tab" onclick="textalign(this, 'right', 'flex-end')">┛</div>
+						</div>
+					</div>
+				</div>
 			</div>
 		</section>
 	</main>

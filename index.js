@@ -84,6 +84,14 @@ const readURL = () => {
 	}
 	if (file) {
 		reader.readAsDataURL(file)
-	} else {}
+	}
 }
 document.getElementById('getbg').addEventListener('change', readURL, true)
+const textalign = ({
+	classList
+}, h, v) => {
+	document.querySelector('.current').classList.toggle('current')
+	capture.style.textAlign = h
+	capture.style.justifyContent = v
+	classList.add('current')
+}
