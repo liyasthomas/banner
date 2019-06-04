@@ -5,11 +5,9 @@ const heading = document.getElementById('heading')
 const root = document.querySelector(':root')
 const download = () => {
 	html2canvas(capture, {
-		width: 1280,
-		height: 375,
 		x: capture.offsetLeft,
 		y: capture.offsetTop,
-		scale: 1
+		scale: 2
 	}).then(canvas => {
 		saveAs(canvas.toDataURL(), 'banner.png')
 	})

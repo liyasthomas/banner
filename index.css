@@ -75,13 +75,13 @@ footer {
 	align-items: center;
 	justify-content: center;
 	flex-direction: column;
+	flex-grow: 1;
 	flex-shrink: 0;
 	margin: 16px;
 	background-color: var(--bg-color);
 	color: var(--font-color);
 	border: 0 solid var(--borderbg-color);
-	height: 375px;
-	width: 1280px;
+	height: 30vw;
 }
 
 [contenteditable=true]:empty:before {
