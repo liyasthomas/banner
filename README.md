@@ -22,7 +22,6 @@ When I wrote this, only God and I understood what I was doing. Now, only God kno
 <div align="center">
   <br>
   <img src="icons/screely.png" alt="banner" width="100%">
-  <img src="icons/screely2.png" alt="banner" width="100%">
   <br>
 </div>
 
@@ -46,8 +45,9 @@ When I wrote this, only God and I understood what I was doing. Now, only God kno
 
 [https://liyasthomas.github.io/banner](https://liyasthomas.github.io/banner)
 
-1. paste/type banner on left
-2. view banner on right
+1. Give a heading
+2. Customize everything!
+3. Download banner
 
 You're done!
 
