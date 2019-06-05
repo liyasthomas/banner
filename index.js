@@ -4,6 +4,16 @@ const fg = document.getElementById('fg')
 const bbg = document.getElementById('bbg')
 const heading = document.getElementById('heading')
 const root = document.querySelector(':root')
+const generateRandomHexColor = () => `#${(0x1000000 + Math.random() * 0xFFFFFF).toString(16).substr(1, 6)}`
+const random = () => {
+	root.style.setProperty('--bg-color', generateRandomHexColor())
+	root.style.setProperty('--fg-color', generateRandomHexColor())
+	root.style.setProperty('--bbg-color', generateRandomHexColor())
+	picker1.setColor(getComputedStyle(document.documentElement).getPropertyValue('--bg-color'))
+	picker2.setColor(getComputedStyle(document.documentElement).getPropertyValue('--fg-color'))
+	picker3.setColor(getComputedStyle(document.documentElement).getPropertyValue('--bbg-color'))
+}
+random()
 const download = () => {
 	html2canvas(capture, {
 		x: capture.offsetLeft,
@@ -25,15 +35,6 @@ const saveAs = (uri, filename) => {
 		window.open(uri)
 	}
 }
-const border = ({
-	value
-}) => capture.style.borderWidth = value + `px`
-const fontsize = ({
-	value
-}) => heading.style.fontSize = value + `px`
-const cheight = ({
-	value
-}) => capture.style.height = value + `vw`
 let picker1 = new Picker({
 	parent: bg,
 	color: getComputedStyle(document.documentElement).getPropertyValue('--bg-color'),
@@ -67,15 +68,15 @@ let picker3 = new Picker({
 		root.style.setProperty('--bbg-color', rgbaString)
 	}
 })
-const random = () => {
-	root.style.setProperty('--bg-color', generateRandomHexColor())
-	root.style.setProperty('--fg-color', generateRandomHexColor())
-	root.style.setProperty('--bbg-color', generateRandomHexColor())
-	picker1.setColor(getComputedStyle(document.documentElement).getPropertyValue('--bg-color'))
-	picker2.setColor(getComputedStyle(document.documentElement).getPropertyValue('--fg-color'))
-	picker3.setColor(getComputedStyle(document.documentElement).getPropertyValue('--bbg-color'))
-}
-const generateRandomHexColor = () => `#${(0x1000000 + Math.random() * 0xFFFFFF).toString(16).substr(1, 6)}`
+const borderwidth = ({
+	value
+}) => capture.style.borderWidth = value + `px`
+const fontsize = ({
+	value
+}) => heading.style.fontSize = value + `px`
+const cheight = ({
+	value
+}) => capture.style.height = value + `vw`
 const readURL = () => {
 	const file = document.getElementById('getbg').files[0]
 	const reader = new FileReader()
