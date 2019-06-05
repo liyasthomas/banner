@@ -6,7 +6,7 @@
 	},
 	"description": "A simple and clean banner generator",
 	"author": "liyasthomas",
-	"version": "0.0.1",
+	"version": "0.1.9",
 	"devDependencies": {
 		"jshint": "^2.10.2"
 	},
