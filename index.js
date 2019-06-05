@@ -9,7 +9,6 @@ let picker1 = new Picker({
 	parent: bg,
 	color: getComputedStyle(document.documentElement).getPropertyValue('--bg-color'),
 	popup: 'left',
-	alpha: false,
 	onChange({
 		rgbaString
 	}) {
@@ -20,7 +19,6 @@ let picker2 = new Picker({
 	parent: fg,
 	color: getComputedStyle(document.documentElement).getPropertyValue('--fg-color'),
 	popup: 'left',
-	alpha: false,
 	onChange({
 		rgbaString
 	}) {
@@ -31,7 +29,6 @@ let picker3 = new Picker({
 	parent: bbg,
 	color: getComputedStyle(document.documentElement).getPropertyValue('--bbg-color'),
 	popup: 'left',
-	alpha: false,
 	onChange({
 		rgbaString
 	}) {
@@ -50,9 +47,7 @@ const randomize = () => {
 randomize()
 const download = () => {
 	html2canvas(capture, {
-		x: capture.offsetLeft,
-		y: capture.offsetTop,
-		scale: 1
+		scale: 1.5
 	}).then(canvas => {
 		saveAs(canvas.toDataURL(), 'banner.png')
 	})
@@ -82,13 +77,18 @@ const readURL = () => {
 	const file = document.getElementById('getbg').files[0]
 	const reader = new FileReader()
 	reader.onloadend = () => {
-		document.getElementById('capture').style.backgroundImage = `url(${reader.result})`
+		capture.style.backgroundImage = `url(${reader.result})`
 	}
 	if (file) {
 		reader.readAsDataURL(file)
+		document.getElementById('resetbg').style.display = 'inline-flex'
 	}
 }
 document.getElementById('getbg').addEventListener('change', readURL, true)
+const resetbg = () => {
+	capture.style.backgroundImage = ``
+	document.getElementById('resetbg').style.display = 'none'
+}
 const textalign = ({
 	classList
 }, h, v) => {

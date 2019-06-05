@@ -75,8 +75,10 @@
 			</a>
 		</header>
 		<section class="content">
-			<div id="capture" class="capture">
-				<div id="heading" class="heading" placeholder="edit me" contenteditable="true">edit me</div>
+			<div class="wrapper">
+				<div id="capture" class="capture">
+					<div id="heading" class="heading" placeholder="edit me" contenteditable="true">edit me</div>
+				</div>
 			</div>
 			<div class="controls">
 				<div class="actions">
@@ -109,6 +111,7 @@
 				</div>
 				<div class="flex">
 					<h3>Background image</h3>
+					<span id="resetbg" style="display: none; cursor: pointer;" onclick="resetbg()">(reset)</span>
 					<input type='file' id='getbg' name="background-image">
 				</div>
 				<div class="flex">

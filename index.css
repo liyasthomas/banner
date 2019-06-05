@@ -74,7 +74,11 @@ footer {
 }
 
 .wrapper {
-	position: relative;
+	position: sticky;
+	top: 0;
+	display: inline-flex;
+	flex-grow: 1;
+	background-color: #f9f9fa;
 }
 
 .capture {
@@ -95,6 +99,7 @@ footer {
 	background-repeat: no-repeat;
 	background-size: cover;
 	text-align: center;
+	z-index: 99;
 }
 
 [contenteditable=true]:empty:before {
