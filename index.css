@@ -2,7 +2,7 @@
 	--bg-color: #0a0a0a;
 	--fg-color: #fff;
 	--bbg-color: #f00;
-	--bw-size: 20px;
+	--bw-size: 0px;
 }
 
 * {
@@ -130,6 +130,7 @@ input {
 	line-height: 2;
 	background: #0a0a0a;
 	color: #fff;
+	border-radius: 4px;
 }
 
 .heading {
@@ -176,6 +177,7 @@ button {
 	color: #fff;
 	cursor: pointer;
 	font-size: 18px;
+	border-radius: 4px;
 }
 
 .flex {
@@ -189,6 +191,8 @@ button {
 .tabs {
 	display: flex;
 	flex-direction: column;
+	background-color: #eee;
+	border-radius: 4px;
 }
 
 .rows {
@@ -199,7 +203,7 @@ button {
 	display: inline-flex;
 	padding: 8px 16px;
 	cursor: pointer;
-	background-color: #eee;
+	border-radius: 4px;
 }
 
 .current {
@@ -207,7 +211,7 @@ button {
 	color: #fff;
 }
 
-@media (max-width: 640px) {
+@media (max-width: 880px) {
 	.content {
 		flex-direction: column;
 	}

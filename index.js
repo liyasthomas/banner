@@ -43,11 +43,9 @@ const randomize = () => {
 	root.style.setProperty('--bg-color', generateRandomHexColor())
 	root.style.setProperty('--fg-color', generateRandomHexColor())
 	root.style.setProperty('--bbg-color', generateRandomHexColor())
-	root.style.setProperty('--bw-size', `${Math.floor(Math.random() * (50 - 12) + 12)}px`)
 	picker1.setColor(getComputedStyle(document.documentElement).getPropertyValue('--bg-color'))
 	picker2.setColor(getComputedStyle(document.documentElement).getPropertyValue('--fg-color'))
 	picker3.setColor(getComputedStyle(document.documentElement).getPropertyValue('--bbg-color'))
-	borderw.value = getComputedStyle(document.documentElement).getPropertyValue('--bw-size').slice(0, -2)
 }
 randomize()
 const download = () => {
