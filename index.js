@@ -4,6 +4,7 @@ const fg = document.getElementById('fg')
 const bbg = document.getElementById('bbg')
 const heading = document.getElementById('heading')
 const borderw = document.getElementById('borderw')
+const tsc = document.getElementById('tsc')
 const root = document.querySelector(':root')
 let picker1 = new Picker({
 	parent: bg,
@@ -33,6 +34,16 @@ let picker3 = new Picker({
 		rgbaString
 	}) {
 		root.style.setProperty('--bbg-color', rgbaString)
+	}
+})
+let picker4 = new Picker({
+	parent: tsc,
+	color: getComputedStyle(document.documentElement).getPropertyValue('--ts-color'),
+	popup: 'left',
+	onChange({
+		rgbaString
+	}) {
+		root.style.setProperty('--ts-color', rgbaString)
 	}
 })
 const generateRandomHexColor = () => `#${(0x1000000 + Math.random() * 0xFFFFFF).toString(16).substr(1, 6)}`
@@ -73,6 +84,15 @@ const fontsize = ({
 const cheight = ({
 	value
 }) => capture.style.height = value + `vw`
+const tsx = ({
+	value
+}) => root.style.setProperty('--tsx-size', `${value}px`)
+const tsy = ({
+	value
+}) => root.style.setProperty('--tsy-size', `${value}px`)
+const tsb = ({
+	value
+}) => root.style.setProperty('--tsb-size', `${value}px`)
 const readURL = () => {
 	const file = document.getElementById('getbg').files[0]
 	const reader = new FileReader()

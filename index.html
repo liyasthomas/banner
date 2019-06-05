@@ -106,16 +106,18 @@
 					<input id="fontsize" type="number" oninput="fontsize(this)" value="60" min="14" max="200">
 				</div>
 				<div class="flex">
-					<h3>Height ratio</h3>
-					<input id="height" type="number" oninput="cheight(this)" value="30" min="20" max="100" step="5">
+					<h3>Text shadow</h3>
 				</div>
 				<div class="flex">
-					<h3>Background image</h3>
-					<span id="resetbg" style="display: none; cursor: pointer;" onclick="resetbg()">(reset)</span>
-					<input type='file' id='getbg' name="background-image">
+					X<input id="tsx" type="number" oninput="tsx(this)" value="0">
+					Y<input id="tsy" type="number" oninput="tsy(this)" value="0">
+					Blur<input id="tsb" type="number" oninput="tsb(this)" value="0" min="0">
+					Color<div id="tsc" class="color"></div>
 				</div>
 				<div class="flex">
 					<h3>Text alignment</h3>
+				</div>
+				<div class="flex">
 					<div class="tabs">
 						<div class="rows">
 							<div class="tab" onclick="textalign(this, 'left', 'flex-start')">┏</div>
@@ -133,6 +135,15 @@
 							<div class="tab" onclick="textalign(this, 'right', 'flex-end')">┛</div>
 						</div>
 					</div>
+				</div>
+				<div class="flex">
+					<h3>Background image</h3>
+					<span id="resetbg" style="display: none; cursor: pointer;" onclick="resetbg()">(reset)</span>
+					<input type='file' id='getbg' name="background-image">
+				</div>
+				<div class="flex">
+					<h3>Height ratio</h3>
+					<input id="height" type="number" oninput="cheight(this)" value="30" min="20" max="100" step="5">
 				</div>
 			</div>
 		</section>

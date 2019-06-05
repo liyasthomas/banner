@@ -2,7 +2,11 @@
 	--bg-color: #0a0a0a;
 	--fg-color: #fff;
 	--bbg-color: #f00;
-	--bw-size: 0px;
+	--bw-size: 0;
+	--tsx-size: 0;
+	--tsy-size: 0;
+	--tsb-size: 0;
+	--ts-color: rgba(0, 0, 0, 0);
 }
 
 * {
@@ -79,6 +83,7 @@ footer {
 	display: inline-flex;
 	flex-grow: 1;
 	background-color: #f9f9fa;
+	z-index: 99;
 }
 
 .capture {
@@ -99,7 +104,6 @@ footer {
 	background-repeat: no-repeat;
 	background-size: cover;
 	text-align: center;
-	z-index: 99;
 }
 
 [contenteditable=true]:empty:before {
@@ -142,6 +146,7 @@ input {
 	font-size: 60px;
 	line-height: 1;
 	font-weight: 700;
+	text-shadow: var(--tsx-size) var(--tsy-size) var(--tsb-size) var(--ts-color);
 }
 
 .controls {
@@ -167,6 +172,10 @@ input {
 
 #bbg {
 	background-color: var(--bbg-color);
+}
+
+#tsc {
+	background-color: var(--ts-color);
 }
 
 button {
@@ -195,6 +204,7 @@ button {
 
 .tabs {
 	display: flex;
+	flex-grow: 1;
 	flex-direction: column;
 	background-color: #eee;
 	border-radius: 4px;
@@ -206,6 +216,9 @@ button {
 
 .tab {
 	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	flex-grow: 1;
 	padding: 8px 16px;
 	cursor: pointer;
 	border-radius: 4px;
