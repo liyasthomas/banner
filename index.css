@@ -2,6 +2,7 @@
 	--bg-color: #0a0a0a;
 	--fg-color: #fff;
 	--bbg-color: #f00;
+	--bw-size: 20px;
 }
 
 * {
@@ -88,7 +89,7 @@ footer {
 	margin: 16px;
 	background-color: var(--bg-color);
 	color: var(--fg-color);
-	border: 0px solid var(--bbg-color);
+	border: var(--bw-size) solid var(--bbg-color);
 	height: 30vw;
 	background-position: center center;
 	background-repeat: no-repeat;
