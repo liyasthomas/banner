@@ -124,9 +124,10 @@ window.addEventListener('beforeinstallprompt', (e) => {
 async function installPWA() {
 	if (deferredPrompt) {
 		deferredPrompt.prompt();
-		console.log(deferredPrompt)
-		deferredPrompt.userChoice.then(function (choiceResult) {
-			if (choiceResult.outcome === 'accepted') {
+		deferredPrompt.userChoice.then(({
+			outcome
+		}) => {
+			if (outcome === 'accepted') {
 				console.log('Your PWA has been installed');
 			} else {
 				console.log('User chose to not install your PWA');
