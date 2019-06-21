@@ -70,9 +70,12 @@
 	<main role="main" class="container">
 		<header>
 			<h2><a href="https://liyasthomas.github.io/banner">Banner</a></h2>
-			<a href="https://github.com/liyasthomas/banner" target="_blank">
-				<img src="icons/github.svg" alt="GitHub" style="margin-right: 8px;">GitHub
-			</a>
+			<div>
+				<a href="https://github.com/liyasthomas/banner" style="margin-right: 24px;" target="_blank">
+					<img src="icons/github.svg" alt="GitHub" style="margin-right: 8px;">GitHub
+				</a>
+				<button onclick="installPWA()"><img src="icons/pwalogo.svg" alt="PWA" style="height: 24px;"></button>
+			</div>
 		</header>
 		<section class="content">
 			<div class="wrapper">
@@ -112,7 +115,7 @@
 					X<input id="tsx" type="number" oninput="tsx(this)" value="0">
 					Y<input id="tsy" type="number" oninput="tsy(this)" value="0">
 					Blur<input id="tsb" type="number" oninput="tsb(this)" value="0" min="0">
-					Color<div id="tsc" class="color"></div>
+					<div id="tsc" class="color"></div>
 				</div>
 				<div class="flex">
 					<h3>Text alignment</h3>

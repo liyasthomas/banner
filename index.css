@@ -6,7 +6,7 @@
 	--tsx-size: 0;
 	--tsy-size: 0;
 	--tsb-size: 0;
-	--ts-color: rgba(0, 0, 0, 0);
+	--ts-color: rgba(0, 0, 0, .25);
 }
 
 * {
@@ -183,9 +183,8 @@ button {
 	align-items: center;
 	justify-content: center;
 	flex-grow: 1;
-	width: 100%;
 	font-family: 'Product Sans', 'Roboto', 'Noto', sans-serif;
-	padding: 16px 32px;
+	padding: 8px 16px;
 	margin: 4px 0;
 	background-color: #0a0a0a;
 	color: #fff;
