@@ -117,40 +117,41 @@ const textalign = ({
 	capture.style.justifyContent = v
 	classList.add('current')
 }
-let pwaInstalled = localStorage.getItem('pwaInstalled') == 'yes' ? true : false
+let pwaInstalled = localStorage.getItem('pwaInstalled') == 'yes'
 if (window.matchMedia('(display-mode: standalone)').matches) {
-	localStorage.setItem('pwaInstalled', 'yes');
-	pwaInstalled = true;
+	localStorage.setItem('pwaInstalled', 'yes')
+	pwaInstalled = true
 }
 if (window.navigator.standalone === true) {
-	localStorage.setItem('pwaInstalled', 'yes');
-	pwaInstalled = true;
+	localStorage.setItem('pwaInstalled', 'yes')
+	pwaInstalled = true
 }
-if (pwaInstalled)
-	document.getElementById("installPWA").style.display = 'none'
-else
-	document.getElementById("installPWA").style.display = 'inline-flex'
-let deferredPrompt = null;
+if (pwaInstalled) {
+	document.getElementById('installPWA').style.display = 'none'
+} else {
+	document.getElementById('installPWA').style.display = 'inline-flex'
+}
+let deferredPrompt = null
 window.addEventListener('beforeinstallprompt', (e) => {
-	deferredPrompt = e;
-});
+	deferredPrompt = e
+})
 async function installPWA() {
 	if (deferredPrompt) {
-		deferredPrompt.prompt();
+		deferredPrompt.prompt()
 		deferredPrompt.userChoice.then(({
 			outcome
 		}) => {
 			if (outcome === 'accepted') {
-				console.log('Your PWA has been installed');
+				console.log('Your PWA has been installed')
 			} else {
-				console.log('User chose to not install your PWA');
+				console.log('User chose to not install your PWA')
 			}
-			deferredPrompt = null;
-		});
+			deferredPrompt = null
+		})
 	}
 }
 window.addEventListener('appinstalled', (evt) => {
-	localStorage.setItem('pwaInstalled', 'yes');
-	pwaInstalled = true;
-	document.getElementById("installPWA").style.display = 'none'
-});
+	localStorage.setItem('pwaInstalled', 'yes')
+	pwaInstalled = true
+	document.getElementById('installPWA').style.display = 'none'
+})
