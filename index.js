@@ -117,6 +117,19 @@ const textalign = ({
 	capture.style.justifyContent = v
 	classList.add('current')
 }
+let pwaInstalled = localStorage.getItem('pwaInstalled') == 'yes' ? true : false
+if (window.matchMedia('(display-mode: standalone)').matches) {
+	localStorage.setItem('pwaInstalled', 'yes');
+	pwaInstalled = true;
+}
+if (window.navigator.standalone === true) {
+	localStorage.setItem('pwaInstalled', 'yes');
+	pwaInstalled = true;
+}
+if (pwaInstalled)
+	document.getElementById("installPWA").style.display = 'none'
+else
+	document.getElementById("installPWA").style.display = 'inline-flex'
 let deferredPrompt = null;
 window.addEventListener('beforeinstallprompt', (e) => {
 	deferredPrompt = e;
@@ -136,3 +149,7 @@ async function installPWA() {
 		});
 	}
 }
+window.addEventListener('appinstalled', (evt) => {
+	localStorage.setItem('pwaInstalled', 'yes');
+	pwaInstalled = true;
+});
