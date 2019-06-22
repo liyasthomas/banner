@@ -152,4 +152,5 @@ async function installPWA() {
 window.addEventListener('appinstalled', (evt) => {
 	localStorage.setItem('pwaInstalled', 'yes');
 	pwaInstalled = true;
+	document.getElementById("installPWA").style.display = 'none'
 });
