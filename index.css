@@ -13,6 +13,8 @@
 	box-sizing: border-box;
 	outline: 0;
 	border: 0;
+	font-family: 'Poppins', 'Roboto', 'Noto', sans-serif;
+	font-weight: 700;
 }
 
 ::selection {
@@ -47,8 +49,6 @@ body {
 	width: 100%;
 	height: 100vh;
 	font-size: 18px;
-	font-weight: 500;
-	font-family: 'Product Sans', 'Roboto', 'Noto', sans-serif;
 	line-height: 1.5;
 	animation: fadein .2s;
 }
@@ -119,7 +119,7 @@ input[type="number"] {
 
 input[type=file] {
 	display: inline-flex;
-	width: 88px;
+	width: 96px;
 	height: 40px;
 	cursor: pointer;
 }
@@ -135,7 +135,6 @@ input[type=file]::-webkit-file-upload-button {
 
 input {
 	font-size: 18px;
-	font-family: 'Product Sans', 'Roboto', 'Noto', sans-serif;
 	line-height: 2;
 	background: #0a0a0a;
 	color: #fff;
@@ -183,7 +182,6 @@ button {
 	align-items: center;
 	justify-content: center;
 	flex-grow: 1;
-	font-family: 'Product Sans', 'Roboto', 'Noto', sans-serif;
 	padding: 8px 16px;
 	margin: 4px 0;
 	background-color: #0a0a0a;
