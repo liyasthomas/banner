@@ -1,5 +1,5 @@
 :root {
-	--bg-color: #0a0a0a;
+	--bg-color: #000;
 	--fg-color: #fff;
 	--bbg-color: #f00;
 	--bw-size: 0;
@@ -44,8 +44,7 @@ body {
 	-webkit-touch-callout: none;
 	-webkit-user-select: none;
 	user-select: none;
-	background-color: #f9f9fa;
-	color: #0a0a0a;
+	color: #000;
 	width: 100%;
 	height: 100vh;
 	font-size: 18px;
@@ -136,7 +135,7 @@ input[type=file]::-webkit-file-upload-button {
 input {
 	font-size: 18px;
 	line-height: 2;
-	background: #0a0a0a;
+	background: #000;
 	color: #fff;
 	border-radius: 4px;
 }
@@ -184,7 +183,7 @@ button {
 	flex-grow: 1;
 	padding: 8px 16px;
 	margin: 4px 0;
-	background-color: #0a0a0a;
+	background-color: #000;
 	color: #fff;
 	cursor: pointer;
 	font-size: 18px;
@@ -222,7 +221,7 @@ button {
 }
 
 .current {
-	background-color: #0a0a0a;
+	background-color: #000;
 	color: #fff;
 }
 
