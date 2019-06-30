@@ -81,7 +81,7 @@ footer {
 	top: 0;
 	display: inline-flex;
 	flex-grow: 1;
-	background-color: #f9f9fa;
+	background-color: #fff;
 	z-index: 99;
 }
 
