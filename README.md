@@ -1,18 +1,3 @@
-```
-When I wrote this, only God and I understood what I was doing. Now, only God knows.
-```
-<div align="center">
-  <a href="https://liyas-thomas.firebaseapp.com"><img src="https://raw.githubusercontent.com/liyasthomas/templates/master/assets/logo.gif" alt="Liyas Thomas" width="200"></a>
-  <br>
-  <h1>Liyas Thomas</h1>
-  <sub>Built with ❤︎ by
-  <a href="https://github.com/liyasthomas">liyasthomas</a> and
-  <a href="https://github.com/liyasthomas/banner/graphs/contributors">contributors</a>
-	</sub>
-</div>
-
----
-
 [![Build Status](https://travis-ci.org/liyasthomas/banner.svg?branch=master)](https://travis-ci.org/liyasthomas/banner) [![GitHub release](https://img.shields.io/github/release/liyasthomas/banner/all.svg)](https://github.com/liyasthomas/banner/releases/latest) [![repo size](https://img.shields.io/github/repo-size/liyasthomas/banner.svg)](https://github.com/liyasthomas/banner/archive/master.zip) [![license](https://img.shields.io/github/license/liyasthomas/banner.svg)](https://github.com/liyasthomas/banner/blob/master/LICENSE) [![contributions welcome](https://img.shields.io/badge/contributions-welcome-brightgreen.svg?style=flat)](https://github.com/liyasthomas/banner/issues) [![Website](https://img.shields.io/website-up-down-green-red/https/shields.io.svg?label=website)](https://liyas-thomas.firebaseapp.com) [![Donate](https://img.shields.io/badge/$-donate-ff69b4.svg)](https://www.paypal.me/liyascthomas)
 
 # <img src="icons/icon-48x48.png" alt="banner" width="32"> Banner
@@ -91,12 +76,6 @@ See the [CHANGELOG](CHANGELOG.md) file for details.
 
 ### Lead Developers
 * [**Liyas Thomas**](https://github.com/liyasthomas) - *Author*
-
-### Testing and Debugging
-* [Liyas Thomas](https://github.com/liyasthomas)
-
-### Contributors
-* [Liyas Thomas](https://github.com/liyasthomas)
 
 ### Thanks
 * [Dribbble](https://dribbble.com)
