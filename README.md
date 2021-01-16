@@ -1,4 +1,4 @@
-[![Build Status](https://travis-ci.org/liyasthomas/banner.svg?branch=master)](https://travis-ci.org/liyasthomas/banner) [![GitHub release](https://img.shields.io/github/release/liyasthomas/banner/all.svg)](https://github.com/liyasthomas/banner/releases/latest) [![repo size](https://img.shields.io/github/repo-size/liyasthomas/banner.svg)](https://github.com/liyasthomas/banner/archive/master.zip) [![license](https://img.shields.io/github/license/liyasthomas/banner.svg)](https://github.com/liyasthomas/banner/blob/master/LICENSE) [![contributions welcome](https://img.shields.io/badge/contributions-welcome-brightgreen.svg?style=flat)](https://github.com/liyasthomas/banner/issues) [![Website](https://img.shields.io/website-up-down-green-red/https/shields.io.svg?label=website)](https://liyas-thomas.firebaseapp.com) [![Donate](https://img.shields.io/badge/$-donate-ff69b4.svg)](https://www.paypal.me/liyascthomas)
+[![Build Status](https://travis-ci.com/liyasthomas/banner.svg?branch=master)](https://travis-ci.com/liyasthomas/banner) [![GitHub release](https://img.shields.io/github/release/liyasthomas/banner/all.svg)](https://github.com/liyasthomas/banner/releases/latest) [![repo size](https://img.shields.io/github/repo-size/liyasthomas/banner.svg)](https://github.com/liyasthomas/banner/archive/master.zip) [![license](https://img.shields.io/github/license/liyasthomas/banner.svg)](https://github.com/liyasthomas/banner/blob/master/LICENSE) [![contributions welcome](https://img.shields.io/badge/contributions-welcome-brightgreen.svg?style=flat)](https://github.com/liyasthomas/banner/issues) [![Website](https://img.shields.io/website-up-down-green-red/https/shields.io.svg?label=website)](https://liyas-thomas.firebaseapp.com) [![Donate](https://img.shields.io/badge/$-donate-ff69b4.svg)](https://www.paypal.me/liyascthomas)
 
 # <img src="icons/icon-48x48.png" alt="banner" width="32"> Banner
 
@@ -56,7 +56,7 @@ Please read [CONTRIBUTING](CONTRIBUTING.md) for details on our [CODE OF CONDUCT]
 
 ## Continuous Integration
 
-We use [Travis CI](https://travis-ci.com) for continuous integration. Check out our [Travis CI Status](https://travis-ci.org/liyasthomas/banner).
+We use [Travis CI](https://travis-ci.com) for continuous integration. Check out our [Travis CI Status](https://travis-ci.com/liyasthomas/banner).
 
 ---
 
