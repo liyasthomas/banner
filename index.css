@@ -232,10 +232,6 @@ button {
   border-radius: 5px;
 }
 
-.flex-container {
-  justify-content: space-evenly;
-}
-
 @media (max-width: 880px) {
   .content {
     flex-direction: column;
