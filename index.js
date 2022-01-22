@@ -7,6 +7,8 @@ const borderw = document.getElementById('borderw')
 const tsc = document.getElementById('tsc')
 const root = document.querySelector(':root')
 
+let isEmphasisSelected = false
+
 let picker1 = new Picker({
   parent: bg,
   color: getComputedStyle(document.documentElement).getPropertyValue(
@@ -127,6 +129,19 @@ const textalign = ({ classList }, h, v) => {
   classList.add('current')
 }
 
+const changeFontEmphasis = ({ classList }) => {
+  let element = document.querySelector(`.${classList[0]}`)
+  if (!isEmphasisSelected) {
+    isEmphasisSelected = true
+    element.style.border = '2px solid black'
+    applyFontEmphasis(classList[0])
+  } else {
+    isEmphasisSelected = false
+    removeFontEmphasis(classList[0])
+    element.style.border = null
+  }
+}
+
 let pwaInstalled = localStorage.getItem('pwaInstalled') == 'yes'
 if (window.matchMedia('(display-mode: standalone)').matches) {
   localStorage.setItem('pwaInstalled', 'yes')
@@ -168,3 +183,33 @@ window.addEventListener('appinstalled', (evt) => {
   pwaInstalled = true
   document.getElementById('installPWA').style.display = 'none'
 })
+
+const applyFontEmphasis = (font) => {
+  switch (font) {
+    case 'boldEm':
+      heading.style.fontWeight = 'bold'
+      break
+    case 'italicEm':
+      heading.style.fontStyle = 'italic'
+      break
+    case 'underlineEm':
+      heading.style.textDecoration = 'underline'
+    default:
+      break
+  }
+}
+
+const removeFontEmphasis = (font) => {
+  switch (font) {
+    case 'boldEm':
+      heading.style.fontWeight = null
+      break
+    case 'italicEm':
+      heading.style.fontStyle = null
+      break
+    case 'underlineEm':
+      heading.style.textDecoration = null
+    default:
+      break
+  }
+}

@@ -14,7 +14,7 @@
   outline: 0;
   border: 0;
   font-weight: 700;
-  font-family: "Poppins", "Roboto", "Noto", sans-serif;
+  font-family: 'Poppins', 'Roboto', 'Noto', sans-serif;
 }
 
 ::selection {
@@ -105,30 +105,30 @@ footer {
   flex-shrink: 0;
 }
 
-[contenteditable="true"]:empty:before {
+[contenteditable='true']:empty:before {
   display: block;
   content: attr(placeholder);
   opacity: 0.5;
 }
 
-input[type="number"] {
+input[type='number'] {
   padding: 2px 2px 2px 8px;
   width: 56px;
 }
 
-input[type="file"] {
+input[type='file'] {
   display: inline-flex;
   width: 96px;
   height: 40px;
   cursor: pointer;
 }
 
-input[type="file"]:before {
+input[type='file']:before {
   padding: 2px 16px;
-  content: "Upload";
+  content: 'Upload';
 }
 
-input[type="file"]::-webkit-file-upload-button {
+input[type='file']::-webkit-file-upload-button {
   visibility: hidden;
 }
 
@@ -142,9 +142,9 @@ input {
 
 .heading {
   text-shadow: var(--tsx-size) var(--tsy-size) var(--tsb-size) var(--ts-color);
-  font-weight: 700;
   font-size: 60px;
   line-height: 1;
+  font-weight: normal;
 }
 
 .controls {
@@ -223,6 +223,17 @@ button {
 .current {
   background-color: #000;
   color: #fff;
+}
+
+.boldEm,
+.italicEm,
+.underlineEm {
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.flex-container {
+  justify-content: space-evenly;
 }
 
 @media (max-width: 880px) {
