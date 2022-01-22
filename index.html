@@ -1,274 +1,200 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1, minimum-scale=1, shrink-to-fit=no"
-    />
-    <title>Banner - A simple and clean banner generator</title>
-    <meta name="description" content="A simple and clean banner generator" />
-    <link rel="canonical" href="https://liyasthomas.github.io/banner/" />
-    <link rel="icon" href="favicon.ico" />
-    <meta itemprop="name" content="Banner" />
-    <meta
-      itemprop="description"
-      content="A simple and clean banner generator"
-    />
-    <meta itemprop="image" content="icons/icon-192x192.png" />
 
-    <!-- See https://goo.gl/OOhYW5 -->
-    <link rel="manifest" href="manifest.json" />
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, shrink-to-fit=no" />
+  <title>Banner - A simple and clean banner generator</title>
+  <meta name="description" content="A simple and clean banner generator" />
+  <link rel="canonical" href="https://liyasthomas.github.io/banner/" />
+  <link rel="icon" href="favicon.ico" />
+  <meta itemprop="name" content="Banner" />
+  <meta itemprop="description" content="A simple and clean banner generator" />
+  <meta itemprop="image" content="icons/icon-192x192.png" />
 
-    <!-- See https://goo.gl/qRE0vM -->
-    <meta name="theme-color" content="#ffffff" />
-    <!-- Add to homescreen for Chrome on Android. Fallback for manifest.json -->
-    <meta name="mobile-web-app-capable" content="yes" />
-    <meta name="application-name" content="Banner" />
-    <!-- Add to homescreen for Safari on iOS -->
-    <meta name="apple-mobile-web-app-capable" content="yes" />
-    <meta
-      name="apple-mobile-web-app-status-bar-style"
-      content="white-translucent"
-    />
-    <meta name="apple-mobile-web-app-title" content="Banner" />
-    <!-- Homescreen icons -->
-    <link rel="apple-touch-icon" href="icons/icon-48x48.png" />
-    <link rel="apple-touch-icon" sizes="72x72" href="icons/icon-72x72.png" />
-    <link rel="apple-touch-icon" sizes="96x96" href="icons/icon-96x96.png" />
-    <link
-      rel="apple-touch-icon"
-      sizes="144x144"
-      href="icons/icon-144x144.png"
-    />
-    <link
-      rel="apple-touch-icon"
-      sizes="192x192"
-      href="icons/icon-192x192.png"
-    />
-    <!-- Tile icon for Windows 8 (144x144 + tile color) -->
-    <meta name="msapplication-TileImage" content="icons/icon-144x144.png" />
-    <meta name="msapplication-TileColor" content="#ffffff" />
-    <meta name="msapplication-tap-highlight" content="no" />
-    <!-- OpenGraph -->
-    <meta property="og:site_name" content="Banner" />
-    <meta property="og:url" content="https://liyasthomas.github.io/banner" />
-    <meta property="og:type" content="website" />
-    <meta property="og:title" content="Banner" />
-    <meta
-      property="og:description"
-      content="A simple and clean banner generator"
-    />
-    <meta property="og:image" content="icons/icon-144x144.png" />
-    <!-- Twitter -->
-    <meta name="twitter:card" content="summary" />
-    <meta name="twitter:site" content="@liyasthomas" />
-    <meta name="twitter:creator" content="@liyasthomas" />
-    <meta name="twitter:url" content="https://liyasthomas.github.io/banner" />
-    <meta name="twitter:title" content="Banner" />
-    <meta
-      name="twitter:description"
-      content="A simple and clean banner generator"
-    />
-    <meta name="twitter:image" content="icons/icon-144x144.png" />
-    <!-- Web Fonts -->
-    <link
-      href="https://fonts.googleapis.com/css?family=Poppins:700&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="index.css" />
+  <!-- See https://goo.gl/OOhYW5 -->
+  <link rel="manifest" href="manifest.json" />
 
-    <script>
-      if ("serviceWorker" in navigator) {
-        window.addEventListener("load", function () {
-          navigator.serviceWorker
-            .register("sw.js")
-            .then(function (registration) {
-              console.log(
-                "ServiceWorker registration successful with scope: ",
-                registration.scope
-              );
-            })
-            .catch(function (err) {
-              console.log("ServiceWorker registration failed: ", err);
-            });
-        });
-      }
-    </script>
+  <!-- See https://goo.gl/qRE0vM -->
+  <meta name="theme-color" content="#ffffff" />
+  <!-- Add to homescreen for Chrome on Android. Fallback for manifest.json -->
+  <meta name="mobile-web-app-capable" content="yes" />
+  <meta name="application-name" content="Banner" />
+  <!-- Add to homescreen for Safari on iOS -->
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="white-translucent" />
+  <meta name="apple-mobile-web-app-title" content="Banner" />
+  <!-- Homescreen icons -->
+  <link rel="apple-touch-icon" href="icons/icon-48x48.png" />
+  <link rel="apple-touch-icon" sizes="72x72" href="icons/icon-72x72.png" />
+  <link rel="apple-touch-icon" sizes="96x96" href="icons/icon-96x96.png" />
+  <link rel="apple-touch-icon" sizes="144x144" href="icons/icon-144x144.png" />
+  <link rel="apple-touch-icon" sizes="192x192" href="icons/icon-192x192.png" />
+  <!-- Tile icon for Windows 8 (144x144 + tile color) -->
+  <meta name="msapplication-TileImage" content="icons/icon-144x144.png" />
+  <meta name="msapplication-TileColor" content="#ffffff" />
+  <meta name="msapplication-tap-highlight" content="no" />
+  <!-- OpenGraph -->
+  <meta property="og:site_name" content="Banner" />
+  <meta property="og:url" content="https://liyasthomas.github.io/banner" />
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Banner" />
+  <meta property="og:description" content="A simple and clean banner generator" />
+  <meta property="og:image" content="icons/icon-144x144.png" />
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:site" content="@liyasthomas" />
+  <meta name="twitter:creator" content="@liyasthomas" />
+  <meta name="twitter:url" content="https://liyasthomas.github.io/banner" />
+  <meta name="twitter:title" content="Banner" />
+  <meta name="twitter:description" content="A simple and clean banner generator" />
+  <meta name="twitter:image" content="icons/icon-144x144.png" />
+  <!-- Web Fonts -->
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="index.css" />
 
-    <script src="https://html2canvas.hertzen.com/dist/html2canvas.min.js"></script>
-    <script src="https://unpkg.com/vanilla-picker"></script>
-  </head>
-  <body>
-    <main role="main" class="container">
-      <header>
-        <h2><a href="https://liyasthomas.github.io/banner">Banner</a></h2>
-        <div>
-          <a
-            href="https://github.com/liyasthomas/banner"
-            style="margin-right: 24px;"
-            target="_blank"
-          >
-            <img
-              src="icons/github.svg"
-              alt="GitHub"
-              style="margin-right: 8px;"
-            />GitHub
-          </a>
-          <button id="installPWA" onclick="installPWA()">
-            <img src="icons/pwalogo.svg" alt="PWA" style="height: 24px;" />
-          </button>
+  <script>
+    if ("serviceWorker" in navigator) {
+      window.addEventListener("load", function () {
+        navigator.serviceWorker
+          .register("sw.js")
+          .then(function (registration) {
+            console.log(
+              "ServiceWorker registration successful with scope: ",
+              registration.scope
+            );
+          })
+          .catch(function (err) {
+            console.log("ServiceWorker registration failed: ", err);
+          });
+      });
+    }
+  </script>
+
+  <script src="https://html2canvas.hertzen.com/dist/html2canvas.min.js"></script>
+  <script src="https://unpkg.com/vanilla-picker"></script>
+
+</head>
+
+<body>
+  <main role="main" class="container">
+    <header>
+      <h2><a href="https://liyasthomas.github.io/banner">Banner</a></h2>
+      <div>
+        <a href="https://github.com/liyasthomas/banner" style="margin-right: 24px;" target="_blank">
+          <img src="icons/github.svg" alt="GitHub" style="margin-right: 8px;" />GitHub
+        </a>
+        <button id="installPWA" onclick="installPWA()">
+          <img src="icons/pwalogo.svg" alt="PWA" style="height: 24px;" />
+        </button>
+      </div>
+    </header>
+    <section class="content">
+      <div class="wrapper">
+        <div id="capture" class="capture">
+          <div id="heading" class="heading" placeholder="edit me" contenteditable="true">
+            edit me
+          </div>
         </div>
-      </header>
-      <section class="content">
-        <div class="wrapper">
-          <div id="capture" class="capture">
-            <div
-              id="heading"
-              class="heading"
-              placeholder="edit me"
-              contenteditable="true"
-            >
-              edit me
+      </div>
+      <div class="controls">
+        <div class="actions">
+          <button id="download" onclick="download()">Download 🚀</button>
+          <button id="random" onclick="randomize()">Randomize ✨</button>
+        </div>
+        <div class="flex">
+          <h3>Background color</h3>
+          <div id="bg" class="color"></div>
+        </div>
+        <div class="flex">
+          <h3>Foreground color</h3>
+          <div id="fg" class="color"></div>
+        </div>
+        <div class="flex">
+          <h3>Border color</h3>
+          <div id="bbg" class="color"></div>
+        </div>
+        <div class="flex">
+          <h3>Border width</h3>
+          <input id="borderw" type="number" oninput="borderwidth(this)" value="0" min="0" />
+        </div>
+        <div class="flex">
+          <h3>Font size</h3>
+          <input id="fontsize" type="number" oninput="fontsize(this)" value="60" min="14" max="200" />
+        </div>
+        <div class="flex">
+          <h3>Font emphasis</h3>
+          <div id="bold">B</div>
+          <div id="italic">I</div>
+          <div id="underline">U</div>
+        </div>
+        <div class="flex">
+          <h3>Text shadow</h3>
+        </div>
+        <div class="flex">
+          X<input id="tsx" type="number" oninput="tsx(this)" value="0" />
+          Y<input id="tsy" type="number" oninput="tsy(this)" value="0" />
+          Blur<input id="tsb" type="number" oninput="tsb(this)" value="0" min="0" />
+          <div id="tsc" class="color"></div>
+        </div>
+        <div class="flex">
+          <h3>Text alignment</h3>
+        </div>
+        <div class="flex">
+          <div class="tabs">
+            <div class="rows">
+              <div class="tab" onclick="textalign(this, 'left', 'flex-start')">
+                ┏
+              </div>
+              <div class="tab" onclick="textalign(this, 'center', 'flex-start')">
+                ┳
+              </div>
+              <div class="tab" onclick="textalign(this, 'right', 'flex-start')">
+                ┓
+              </div>
+            </div>
+            <div class="rows">
+              <div class="tab" onclick="textalign(this, 'left', 'center')">
+                ┣
+              </div>
+              <div class="tab current" onclick="textalign(this, 'center', 'center')">
+                ╋
+              </div>
+              <div class="tab" onclick="textalign(this, 'right', 'center')">
+                ┫
+              </div>
+            </div>
+            <div class="rows">
+              <div class="tab" onclick="textalign(this, 'left', 'flex-end')">
+                ┗
+              </div>
+              <div class="tab" onclick="textalign(this, 'center', 'flex-end')">
+                ┻
+              </div>
+              <div class="tab" onclick="textalign(this, 'right', 'flex-end')">
+                ┛
+              </div>
             </div>
           </div>
         </div>
-        <div class="controls">
-          <div class="actions">
-            <button id="download" onclick="download()">Download 🚀</button>
-            <button id="random" onclick="randomize()">Randomize ✨</button>
-          </div>
-          <div class="flex">
-            <h3>Background color</h3>
-            <div id="bg" class="color"></div>
-          </div>
-          <div class="flex">
-            <h3>Foreground color</h3>
-            <div id="fg" class="color"></div>
-          </div>
-          <div class="flex">
-            <h3>Border color</h3>
-            <div id="bbg" class="color"></div>
-          </div>
-          <div class="flex">
-            <h3>Border width</h3>
-            <input
-              id="borderw"
-              type="number"
-              oninput="borderwidth(this)"
-              value="0"
-              min="0"
-            />
-          </div>
-          <div class="flex">
-            <h3>Font size</h3>
-            <input
-              id="fontsize"
-              type="number"
-              oninput="fontsize(this)"
-              value="60"
-              min="14"
-              max="200"
-            />
-          </div>
-          <div class="flex">
-            <h3>Text shadow</h3>
-          </div>
-          <div class="flex">
-            X<input id="tsx" type="number" oninput="tsx(this)" value="0" />
-            Y<input id="tsy" type="number" oninput="tsy(this)" value="0" />
-            Blur<input
-              id="tsb"
-              type="number"
-              oninput="tsb(this)"
-              value="0"
-              min="0"
-            />
-            <div id="tsc" class="color"></div>
-          </div>
-          <div class="flex">
-            <h3>Text alignment</h3>
-          </div>
-          <div class="flex">
-            <div class="tabs">
-              <div class="rows">
-                <div
-                  class="tab"
-                  onclick="textalign(this, 'left', 'flex-start')"
-                >
-                  ┏
-                </div>
-                <div
-                  class="tab"
-                  onclick="textalign(this, 'center', 'flex-start')"
-                >
-                  ┳
-                </div>
-                <div
-                  class="tab"
-                  onclick="textalign(this, 'right', 'flex-start')"
-                >
-                  ┓
-                </div>
-              </div>
-              <div class="rows">
-                <div class="tab" onclick="textalign(this, 'left', 'center')">
-                  ┣
-                </div>
-                <div
-                  class="tab current"
-                  onclick="textalign(this, 'center', 'center')"
-                >
-                  ╋
-                </div>
-                <div class="tab" onclick="textalign(this, 'right', 'center')">
-                  ┫
-                </div>
-              </div>
-              <div class="rows">
-                <div class="tab" onclick="textalign(this, 'left', 'flex-end')">
-                  ┗
-                </div>
-                <div
-                  class="tab"
-                  onclick="textalign(this, 'center', 'flex-end')"
-                >
-                  ┻
-                </div>
-                <div class="tab" onclick="textalign(this, 'right', 'flex-end')">
-                  ┛
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="flex">
-            <h3>Background image</h3>
-          </div>
-          <div class="flex">
-            <span
-              id="resetbg"
-              style="display: none; cursor: pointer;"
-              onclick="resetbg()"
-              >(reset)</span
-            >
-            <input type="file" id="getbg" name="background-image" />
-          </div>
-          <div class="flex">
-            <h3>Height ratio</h3>
-            <input
-              id="height"
-              type="number"
-              oninput="cheight(this)"
-              value="30"
-              min="20"
-              max="100"
-              step="5"
-            />
-          </div>
+        <div class="flex">
+          <h3>Background image</h3>
         </div>
-      </section>
-    </main>
-    <script src="index.js"></script>
-  </body>
+        <div class="flex">
+          <span id="resetbg" style="display: none; cursor: pointer;" onclick="resetbg()">(reset)</span>
+          <input type="file" id="getbg" name="background-image" />
+        </div>
+        <div class="flex">
+          <h3>Height ratio</h3>
+          <input id="height" type="number" oninput="cheight(this)" value="30" min="20" max="100" step="5" />
+        </div>
+      </div>
+    </section>
+  </main>
+  <script src="index.js"></script>
+</body>
+
 </html>
